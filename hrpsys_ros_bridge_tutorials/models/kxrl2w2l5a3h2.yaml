@@ -22,11 +22,13 @@ head:
 rarm:
   - RARM_JOINT0 : rarm-shoulder-p
   - RARM_JOINT1 : rarm-shoulder-r
-  - RARM_JOINT2 : rarm-gripper-r
+  - RARM_JOINT2 : rarm-elbow-p
+  - RARM_JOINT3 : rarm-gripper-r
 larm:
   - LARM_JOINT0 : larm-shoulder-p
   - LARM_JOINT1 : larm-shoulder-r
-  - LARM_JOINT2 : larm-gripper-r
+  - LARM_JOINT2 : larm-elbow-p
+  - LARM_JOINT3 : larm-gripper-r
 
 ##
 ## end-coords
@@ -49,14 +51,14 @@ angle-vector:
     reset-pose : [0, 25, 50, 25, 0, 0, #rleg  , wheel
                   0, 25, 50, 25, 0, 0, #lleg  , wheel
                   0, 0,         #head
-                  0, 0, 0, 0, 0,      #rarm
-                  0, 0, 0, 0, 0       #larm
+                  0, 0, 0, 0,      #rarm
+                  0, 0, 0, 0       #larm
                   ]
     reset-manip-pose : [0, 15, 30, 15, 0, 0,
                         0, 15, 30, 15, 0, 0,
                         0, 0,              
-                        0, 0, 0, 0, 0,
-                        0, 0, 0, 0, 0
+                        0, 0, 0, 0,
+                        0, 0, 0, 0
                         ]
 
 sensors:
